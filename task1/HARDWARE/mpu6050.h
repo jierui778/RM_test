@@ -65,15 +65,16 @@
 #define MPU_MDETECT_CTRL_REG	0X69	//运动检测控制寄存器
 #define MPU_USER_CTRL_REG		0X6A	//用户控制寄存器
 #define MPU_PWR_MGMT1_REG		0X6B	//电源管理寄存器1
-#define MPU_PWR_MGMT2_REG		0X6C	//电源管理寄存器2 
+#define MPU_PWR_MGMT2_REG		0X6C	//电源管理寄存器2
 #define MPU_FIFO_CNTH_REG		0X72	//FIFO计数寄存器高八位
 #define MPU_FIFO_CNTL_REG		0X73	//FIFO计数寄存器低八位
 #define MPU_FIFO_RW_REG			0X74	//FIFO读写寄存器
 #define MPU_DEVICE_ID_REG		0X75	//器件ID寄存器
- 
+
 //如果AD0脚(9脚)接地,IIC地址为0X68(不包含最低位).
 //如果接V3.3,则IIC地址为0X69(不包含最低位).
-#define MPU_ADDR				0X68
+//#define MPU_ADDR				0X68
+#define MPU_ADDR    0xD0
 
 uint8_t MPU6050_Init(void); // 初始化MPU6050
 // uint8_t MPU6050_DetectOnline();//检测MPU6050是否在线
@@ -83,8 +84,8 @@ uint8_t MPU6050_SetAccelFsr(uint8_t fsr); // 设置加速度传感器满量程�
 
 uint8_t MPU6050_WriteLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf); // IIC连续写
 uint8_t MPU6050_ReadLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf);  // IIC连续读
-uint8_t MPU6050_WriteByte(uint8_t reg, uint8_t data);                           // IIC写一个字节
-uint8_t MPU6050_ReadByte(uint8_t reg);                                          // IIC读一个字节
+uint8_t MPU6050_WriteByte(uint8_t addr, uint8_t data);                           // IIC写一个字节
+uint8_t MPU6050_ReadByte(uint8_t addr);                                          // IIC读一个字节
 
 uint8_t MPU6050_SetRate(uint16_t rate);
 

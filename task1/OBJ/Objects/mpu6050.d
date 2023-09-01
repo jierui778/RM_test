@@ -30,5 +30,4 @@
 .\objects\mpu6050.o: ..\FWLIB\inc\stm32f10x_usart.h
 .\objects\mpu6050.o: ..\FWLIB\inc\stm32f10x_wwdg.h
 .\objects\mpu6050.o: ..\FWLIB\inc\misc.h
-.\objects\mpu6050.o: ..\HARDWARE\iic.h
 .\objects\mpu6050.o: ..\SYSTEM\delay\delay.h

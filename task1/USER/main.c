@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    delay_init();
+     delay_init();
     uart_init(115200);
     int t;
     MPU6050_Init();

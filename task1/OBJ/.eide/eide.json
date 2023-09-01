@@ -100,9 +100,6 @@
         "name": "HARDWARE",
         "files": [
           {
-            "path": "../HARDWARE/iic.c"
-          },
-          {
             "path": "../HARDWARE/mpu6050.c"
           }
         ],
