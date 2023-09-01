@@ -23,11 +23,11 @@ uint8_t MPU6050_Init()
 	I2C_InitStructure.I2C_OwnAddress1 = 0x00;		//指定第一个设备的地址为7位地址
 	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;					//使能ACK信号
 	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;	//指定7位地址
-	I2C_InitStructure.I2C_ClockSpeed = 400000;				
+	I2C_InitStructure.I2C_ClockSpeed = 400000;
 
     I2C_Cmd(I2C2, ENABLE); // 初始化IIC总线
     I2C_Init(I2C2, &I2C_InitStructure);
-    
+
 
     MPU6050_WriteByte(MPU_PWR_MGMT1_REG, 0X80); // 复位MPU6050
     delay_ms(10);
@@ -152,7 +152,7 @@ uint8_t MPU6050_GetGyroscope(short *gx, short *gy, short *gz)
 //     其他,错误代码
 uint8_t MPU6050_GetAccelerometer(short *ax, short *ay, short *az)
 {
-    u8 buf[6], res;
+    uint8_t buf[6], res;
     res = MPU6050_ReadLen(MPU_ADDR, MPU_ACCEL_XOUTH_REG, 6, buf);
     if (res == 0)
     {
@@ -203,30 +203,6 @@ uint8_t MPU6050_WriteLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
         len--;
     }
     I2C_GenerateSTOP(I2C2, ENABLE);
-    // uint8_t i;
-    // IIC_Start();
-    // IIC_SendByte(addr << 1 | 0); // 发送器件地址+写命令，注意器件地址不包括最低位，所以左移1位，最低位为0时代表写。
-    // if (IIC_WaitAck())           // 等待应答
-    // {
-    //     IIC_Stop();
-    //     return 1;
-    // }
-    // IIC_SendByte(reg); // 发送寄存器地址
-    // IIC_WaitAck();     // 等待应答
-    // for (i = 0; i < len; i++)
-    // {
-    //     IIC_SendByte(buf[i]); // 发送数据
-    //     if (IIC_WaitAck())    // 等待应答
-    //     {
-    //         IIC_Stop();
-    //         return 1;
-    //     }
-    //     {
-    //         IIC_Stop();
-    //         return 1;
-    //     }
-    // }
-    // IIC_Stop();
     return 0;
 }
 /**

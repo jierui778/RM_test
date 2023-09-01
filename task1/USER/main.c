@@ -3,19 +3,23 @@
 #include "delay.h"
 #include "mpu6050.h"
 
+
 int main(void)
 {
      delay_init();
     uart_init(115200);
     int t;
+
     MPU6050_Init();
-    
+    int16_t AX, AY, AZ, GX, GY, GZ;
 
 
 
     while (1)
     {
         t=MPU6050_GetTemperature();
+        MPU6050_GetGyroscope(&GX,&GY,&GZ);     // 得到陀螺仪值
+        MPU6050_GetAccelerometer(&AX,&AY,&AZ); // 得到加速度值
         printf("%d\n",t);
 
 
