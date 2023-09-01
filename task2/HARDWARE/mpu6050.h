@@ -93,5 +93,6 @@ short MPU6050_GetTemperature(void);                                // 得到温�
 uint8_t MPU6050_GetGyroscope(short *gx, short *gy, short *gz);     // 得到陀螺仪值
 uint8_t MPU6050_GetAccelerometer(short *ax, short *ay, short *az); // 得到加速度值
 
+uint8_t MPU6050_GetAngle(int16_t *pitch, int16_t *roll, int16_t *yaw);
 
 #endif
