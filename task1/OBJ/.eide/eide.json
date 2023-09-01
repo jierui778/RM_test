@@ -100,10 +100,10 @@
         "name": "HARDWARE",
         "files": [
           {
-            "path": "../HARDWARE/mpu6050.c"
+            "path": "../HARDWARE/iic.c"
           },
           {
-            "path": "../HARDWARE/iic.c"
+            "path": "../HARDWARE/mpu6050.c"
           }
         ],
         "folders": []
@@ -286,9 +286,8 @@
           "../SYSTEM/sys",
           "../SYSTEM/usart",
           "../USER",
-          ".cmsis/include",
-          "RTE/_task1",
-          ".eide/deps"
+          "../HARDWARE",
+          "RTE/_task1"
         ],
         "libList": [],
         "sourceDirList": [],
