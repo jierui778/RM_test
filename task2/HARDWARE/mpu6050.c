@@ -1,6 +1,9 @@
 #include "mpu6050.h"
 #include "sys.h"
 #include "delay.h"
+#include "timer.h"
+
+
 
 uint8_t MPU6050_Init()
 {
@@ -309,55 +312,52 @@ uint8_t MPU6050_ReadByte(uint8_t addr)
     return data;
     // 返回读取数据
 }
-uint8_t MPU6050_GetAngle(int16_t *pitch, int16_t *roll, int16_t *yaw)
+uint8_t MPU6050_IntegralGetAngle(int16_t *pitch, int16_t *roll, int16_t *yaw)
 {
     int16_t GyroX, GyroY, GyroZ;
+    float gyroX,gyroY,gyroZ;
     static float integralX = 0.0f, integralY = 0.0f, integralZ = 0.0f;
-
+    static const float dt = 8.0 / 1000;  // 间隔8ms
+    static const int ZERO_OFFSET_COUN=(1 / dt); // 1/8=125次每秒
+     
     static int g_GetZeroOffset = 0;
-    static float GyroX_Offset = 0.0f, GyroY_Offset = 0.0f, GyroZ_Offset = 0.0f;
-
-    static const float dt = 8.0 / 1000;      // 间隔8ms
-    static const float ZERO_OFFSET_COUN=1 / dt; // 1/8=125次每秒
-
+    static float gyroX_offset = 0.0f, gyroY_offset = 0.0f, gyroZ_offset = 0.0f;
     MPU6050_GetGyroscope(&GyroX, &GyroY, &GyroZ); // 得到陀螺仪值
-    *pitch /= 16.384f;
+    GyroX /= 16.384f;
     GyroY /= 16.384f;
-    GyroZ /= 16.384f;
-
-    // 统计125次，共1秒时间
+    GyroZ /= 16.384f; // 数据转换
+    // 除去零偏
     if (g_GetZeroOffset++ < ZERO_OFFSET_COUN)
     {
-        GyroX_Offset += GyroX * dt; // 每次8%积分，累计加权125次
-        GyroY_Offset += GyroY * dt;
-        GyroZ_Offset += GyroZ * dt;
+        gyroX_offset += gyroX * dt;  // 每次8%积分，累计加权125次
+        gyroY_offset += gyroY * dt;
+        gyroZ_offset += gyroZ * dt;
     }
-
+     
     // 除去零偏
-    GyroX -= GyroX_Offset;
-    GyroY -= GyroY_Offset;
-    GyroZ -= GyroZ_Offset;
+    gyroX -= gyroX_offset;
+    gyroY -= gyroY_offset;
+    gyroZ -= gyroZ_offset;
 
-    if (g_GetZeroOffset++ > ZERO_OFFSET_COUN) // 统计完零偏后开始累计偏角
-    {
-        integralX += GyroX * dt; // 每次8%权重累计偏转角度
-        integralY += GyroY * dt;
-        integralZ += GyroZ * dt;
-        // 360°一个循环
-        if (*pitch > 360)
-            *pitch -= 360;
-        if (*pitch < -360)
-            *pitch += 360;
 
-        if (*roll > 360)
-            *roll -= 360;
-        if (*roll < -360)
-            *roll += 360;
+    *pitch += GyroX * 0.01; // 每次10%权重累计偏转角度
+    *roll += GyroY * 0.01;
+    *yaw += GyroZ * 0.01;
+    // 360°一个循环
+    if (*pitch > 360)
+        *pitch -= 360;
+    if (*pitch < -360)
+        *pitch += 360;
 
-        if (*yaw > 360)
-            *yaw -= 360;
-        if (*yaw < -360)
-            *yaw += 360;
-    }
+    if (*roll > 360)
+        *roll -= 360;
+    if (*roll < -360)
+        *roll += 360;
+
+    if (*yaw > 360)
+        *yaw -= 360;
+    if (*yaw < -360)
+        *yaw += 360;
+    return 0;
 }
 

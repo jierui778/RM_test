@@ -76,6 +76,7 @@
 //#define MPU_ADDR				0X68
 #define MPU_ADDR    0xD0
 
+
 uint8_t MPU6050_Init(void); // 初始化MPU6050
 // uint8_t MPU6050_DetectOnline();//检测MPU6050是否在线
 
@@ -93,6 +94,7 @@ short MPU6050_GetTemperature(void);                                // 得到温�
 uint8_t MPU6050_GetGyroscope(short *gx, short *gy, short *gz);     // 得到陀螺仪值
 uint8_t MPU6050_GetAccelerometer(short *ax, short *ay, short *az); // 得到加速度值
 
-uint8_t MPU6050_GetAngle(int16_t *pitch, int16_t *roll, int16_t *yaw);
+
+uint8_t MPU6050_IntegralGetAngle(int16_t *pitch, int16_t *roll, int16_t *yaw);
 
 #endif
