@@ -31,3 +31,4 @@
 .\objects\timer.o: ..\FWLIB\inc\stm32f10x_wwdg.h
 .\objects\timer.o: ..\FWLIB\inc\misc.h
 .\objects\timer.o: ..\HARDWARE\mpu6050.h
+.\objects\timer.o: ..\HARDWARE\imu.h

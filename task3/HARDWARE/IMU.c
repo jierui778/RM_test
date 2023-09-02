@@ -10,6 +10,7 @@ static float Yaw_offset;//陀螺仪偏移量
 #define PI 3.14159265358979f//圆周率
 #define OFFSET_COUNT 100//校准次数
 #define Buf_SIZE 10 // 队列长度，越大，平滑性越高
+
 int16_t MPU6050_FIFO[6][Buf_SIZE];//FIFO数组，用于存储原始数据
 // int16_t lastAx, lastAy, lastAz, lastGx, lastGy, lastGz;
 static uint8_t Wr_Index = 0; // 当前FIFO的写入下标
@@ -104,7 +105,6 @@ void MPU6050_Init_Offset(void)
     Pitch_offset = tempgy / OFFSET_COUNT;
     Roll_offset = tempgx / OFFSET_COUNT;
     Yaw_offset = tempgz / OFFSET_COUNT;
-
 }
 /**
  * @brief 获取陀螺仪和加速度计的原始数据
@@ -238,4 +238,19 @@ void IMU_Update(void)
     imu.Pitch = asin(2.0f * (q[0] * q[2] - q[1] * q[3])) * 180 / PI;
     imu.Yaw = atan2(2 * q1 * q2 + 2 * q0 * q3, -2 * q2 * q2 - 2 * q3 * q3 + 1) * 180 / PI; // yaw
     printf("%f %f %f\n", imu.Pitch,imu.Roll, imu.Yaw);
+}
+
+
+/**
+ * @brief
+ *
+ * @param pitch 积分得到的俯仰角
+ * @param roll 积分得到的横滚角
+ * @param yaw 积分得到的偏航角
+ * @return uint8_t
+ */
+
+uint8_t MPU6050_IntegralGetAngle(float *pitch, float *roll, float *yaw)
+{
+    return 0;
 }

@@ -312,52 +312,52 @@ uint8_t MPU6050_ReadByte(uint8_t addr)
     return data;
     // 返回读取数据
 }
-uint8_t MPU6050_IntegralGetAngle(int16_t *pitch, int16_t *roll, int16_t *yaw)
-{
-    int16_t GyroX, GyroY, GyroZ;
-    float gyroX,gyroY,gyroZ;
-    static float integralX = 0.0f, integralY = 0.0f, integralZ = 0.0f;
-    static const float dt = 8.0 / 1000;  // 间隔8ms
-    static const int ZERO_OFFSET_COUN=(1 / dt); // 1/8=125次每秒
-     
-    static int g_GetZeroOffset = 0;
-    static float gyroX_offset = 0.0f, gyroY_offset = 0.0f, gyroZ_offset = 0.0f;
-    MPU6050_GetGyroscope(&GyroX, &GyroY, &GyroZ); // 得到陀螺仪值
-    GyroX /= 16.384f;
-    GyroY /= 16.384f;
-    GyroZ /= 16.384f; // 数据转换
-    // 除去零偏
-    if (g_GetZeroOffset++ < ZERO_OFFSET_COUN)
-    {
-        gyroX_offset += gyroX * dt;  // 每次8%积分，累计加权125次
-        gyroY_offset += gyroY * dt;
-        gyroZ_offset += gyroZ * dt;
-    }
-     
-    // 除去零偏
-    gyroX -= gyroX_offset;
-    gyroY -= gyroY_offset;
-    gyroZ -= gyroZ_offset;
+// uint8_t MPU6050_IntegralGetAngle(int16_t *pitch, int16_t *roll, int16_t *yaw)
+// {
+//     int16_t GyroX, GyroY, GyroZ;
+//     float gyroX,gyroY,gyroZ;
+//     static float integralX = 0.0f, integralY = 0.0f, integralZ = 0.0f;
+//     static const float dt = 8.0 / 1000;  // 间隔8ms
+//     static const int ZERO_OFFSET_COUN=(1 / dt); // 1/8=125次每秒
+
+//     static int g_GetZeroOffset = 0;
+//     static float gyroX_offset = 0.0f, gyroY_offset = 0.0f, gyroZ_offset = 0.0f;
+//     MPU6050_GetGyroscope(&GyroX, &GyroY, &GyroZ); // 得到陀螺仪值
+//     GyroX /= 16.384f;
+//     GyroY /= 16.384f;
+//     GyroZ /= 16.384f; // 数据转换
+//     // 除去零偏
+//     if (g_GetZeroOffset++ < ZERO_OFFSET_COUN)
+//     {
+//         gyroX_offset += gyroX * dt;  // 每次8%积分，累计加权125次
+//         gyroY_offset += gyroY * dt;
+//         gyroZ_offset += gyroZ * dt;
+//     }
+
+//     // 除去零偏
+//     gyroX -= gyroX_offset;
+//     gyroY -= gyroY_offset;
+//     gyroZ -= gyroZ_offset;
 
 
-    *pitch += GyroX * 0.01; // 每次10%权重累计偏转角度
-    *roll += GyroY * 0.01;
-    *yaw += GyroZ * 0.01;
-    // 360°一个循环
-    if (*pitch > 360)
-        *pitch -= 360;
-    if (*pitch < -360)
-        *pitch += 360;
+//     *pitch += GyroX * 0.01; // 每次10%权重累计偏转角度
+//     *roll += GyroY * 0.01;
+//     *yaw += GyroZ * 0.01;
+//     // 360°一个循环
+//     if (*pitch > 360)
+//         *pitch -= 360;
+//     if (*pitch < -360)
+//         *pitch += 360;
 
-    if (*roll > 360)
-        *roll -= 360;
-    if (*roll < -360)
-        *roll += 360;
+//     if (*roll > 360)
+//         *roll -= 360;
+//     if (*roll < -360)
+//         *roll += 360;
 
-    if (*yaw > 360)
-        *yaw -= 360;
-    if (*yaw < -360)
-        *yaw += 360;
-    return 0;
-}
+//     if (*yaw > 360)
+//         *yaw -= 360;
+//     if (*yaw < -360)
+//         *yaw += 360;
+//     return 0;
+// }
 

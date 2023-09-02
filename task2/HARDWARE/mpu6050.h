@@ -95,6 +95,5 @@ uint8_t MPU6050_GetGyroscope(short *gx, short *gy, short *gz);     // 得到陀�
 uint8_t MPU6050_GetAccelerometer(short *ax, short *ay, short *az); // 得到加速度值
 
 
-uint8_t MPU6050_IntegralGetAngle(int16_t *pitch, int16_t *roll, int16_t *yaw);
 
 #endif

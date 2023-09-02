@@ -3,6 +3,7 @@
 #include "delay.h"
 #include "mpu6050.h"
 #include "timer.h"
+#include "imu.h"
 
 int main(void)
 {
@@ -10,10 +11,10 @@ int main(void)
     uart_init(115200);
     int t;
 
-    MPU6050_Init();
-    int16_t AX, AY, AZ, GX, GY, GZ;
-    int16_t pitch, roll, yaw;
-    float gyroX, gyroY, gyroZ;
+    IMU_Init();
+    // int16_t AX, AY, AZ, GX, GY, GZ;
+    // int16_t pitch, roll, yaw;
+    // float gyroX, gyroY, gyroZ;
 //    static const float dt = 10.0 / 1000;  // 间隔8ms
 //    static const int ZERO_OFFSET_COUN =1 / dt; // 1/8=125次每秒
 
@@ -22,11 +23,16 @@ int main(void)
 
 //    float integralX = 0.0f, integralY = 0.0f, integralZ = 0.0f;
 
-    
+
 
 
     while (1)
     {
+
+        float a[3], g[3];
+//        int16_t a[3], g[3];
+//        MPU6050_ReadGyro_Acc(&g[0],&a[0]);
+        IMU_IntegralGyro(&g[0]);
 //    int16_t GyroX, GyroY, GyroZ;
 //    static float integralX = 0.0f, integralY = 0.0f, integralZ = 0.0f;
 //\
@@ -56,8 +62,8 @@ int main(void)
 //        yaw -= 360;
 //    if (yaw < -360)
 //        yaw += 360;
-        MPU6050_IntegralGetAngle(&pitch, &roll, &yaw);
-        printf("%d %d %d\n", pitch, roll, yaw);
+        // MPU6050_IntegralGetAngle(&pitch, &roll, &yaw);
+        printf("%f %f %f\n", g[0], g[1], g[2]);
 //        t=MPU6050_GetTemperature();
 //        MPU6050_GetGyroscope(&GX,&GY,&GZ);     // 得到陀螺仪值
 ////                printf("%d %d %d\n", GX, GY, GZ);

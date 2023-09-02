@@ -101,6 +101,12 @@
         "files": [
           {
             "path": "../HARDWARE/mpu6050.c"
+          },
+          {
+            "path": "../HARDWARE/timer.c"
+          },
+          {
+            "path": "../HARDWARE/imu.c"
           }
         ],
         "folders": []

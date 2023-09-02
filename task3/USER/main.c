@@ -13,7 +13,7 @@ int main(void)
     uart_init(115200);
     int t;
 
-    
+
     int16_t AX, AY, AZ, GX, GY, GZ;
     int16_t g[3];
     int16_t a[3];

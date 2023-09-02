@@ -26,6 +26,7 @@
 ".\objects\stm32f10x_wwdg.o"
 ".\objects\mpu6050.o"
 ".\objects\timer.o"
+".\objects\imu.o"
 ".\objects\delay.o"
 ".\objects\sys.o"
 ".\objects\usart.o"
