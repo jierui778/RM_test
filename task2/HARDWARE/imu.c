@@ -2,8 +2,8 @@
 #include "mpu6050.h"
 
 #define Buf_SIZE 10 // 队列长度，越大，平滑性越高
-#define OFFSET_COUNT 200 // 校准次数
-#define IMU_IntegralCount 1000 // 积分次数
+#define OFFSET_COUNT 100 // 校准次数
+#define IMU_IntegralCount 100 // 积分次数
 #define dt 1/IMU_IntegralCount
 
 static float Pitch_offset;
