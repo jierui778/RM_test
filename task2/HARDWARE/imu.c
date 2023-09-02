@@ -2,8 +2,9 @@
 #include "mpu6050.h"
 
 #define Buf_SIZE 10 // 队列长度，越大，平滑性越高
-#define OFFSET_COUNT 100 // 校准次数
-#define IMU_IntegralCount 100 // 积分次数
+#define OFFSET_COUNT 200 // 校准次数
+#define IMU_IntegralCount 1000 // 积分次数
+#define dt 1/IMU_IntegralCount
 
 static float Pitch_offset;
 static float Roll_offset;
@@ -150,15 +151,15 @@ void IMU_IntegralGyro(float *gyro)//获取积分后的角度
     int16_t Gyro[3], Acc[3];
     int i, j;
     MPU6050_ReadGyro_Acc(&Gyro[0], &Acc[0]);
-    for (i = 0; i < 3; i++)
-    {
-        gyro[i] = ((float)Gyro[i]) / 16.4f; // gyro range +-2000; adc accuracy 2^16=65536; 65536/4000=16.4;
-    }
+//    for (i = 0; i < 3; i++)
+//    {
+//        Gyro[i] = ((float)Gyro[i]) / 16.4f; // gyro range +-2000; adc accuracy 2^16=65536; 65536/4000=16.4;
+//    }
     for (j = 0; j < IMU_IntegralCount; j++)
     {
-        gyro[0] += Gyro[0] * 0.01;
-        gyro[1] += Gyro[1] * 0.01;
-        gyro[2] += Gyro[2] * 0.01;
+        gyro[0] += Gyro[0] / 16.4f * dt;
+        gyro[1] += Gyro[1] / 16.4f* dt;
+        gyro[2] += Gyro[2] / 16.4f* dt;
         if (gyro[0] > 360)
         {
             gyro[0] -= 360;

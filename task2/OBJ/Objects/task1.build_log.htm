@@ -27,17 +27,21 @@ Project File Date:  09/02/2023
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Program Files\Keil_v5\ARM\ARMCC\Bin'
 Build target 'task2'
-compiling main.c...
+compiling imu.c...
 ..\HARDWARE\imu.h(17): warning:  #1-D: last line of file ends without a newline
   #endif
-..\USER\main.c(32): warning:  #177-D: variable "a"  was declared but never referenced
-          float a[3], g[3];
-..\USER\main.c(12): warning:  #177-D: variable "t"  was declared but never referenced
-      int t;
-..\USER\main.c: 3 warnings, 0 errors
+..\HARDWARE\imu.c(115): warning:  #223-D: function "delay_ms" declared implicitly
+          delay_ms(10);
+..\HARDWARE\imu.c(122): warning:  #223-D: function "delay_ms" declared implicitly
+          delay_ms(10);
+..\HARDWARE\imu.c(188): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\imu.c(152): warning:  #177-D: variable "i"  was declared but never referenced
+      int i, j;
+..\HARDWARE\imu.c: 5 warnings, 0 errors
 linking...
-Program Size: Code=11912 RO-data=512 RW-data=80 ZI-data=1968  
-".\Objects\task1.axf" - 0 Error(s), 3 Warning(s).
+Program Size: Code=10660 RO-data=512 RW-data=80 ZI-data=1968  
+".\Objects\task1.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +54,7 @@ Package Vendor: Keil
   C:/Users/JIERUI/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

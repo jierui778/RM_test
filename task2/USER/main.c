@@ -12,6 +12,7 @@ int main(void)
     int t;
 
     IMU_Init();
+    float a[3], g[3];
     // int16_t AX, AY, AZ, GX, GY, GZ;
     // int16_t pitch, roll, yaw;
     // float gyroX, gyroY, gyroZ;
@@ -29,10 +30,11 @@ int main(void)
     while (1)
     {
 
-        float a[3], g[3];
+        
 //        int16_t a[3], g[3];
 //        MPU6050_ReadGyro_Acc(&g[0],&a[0]);
         IMU_IntegralGyro(&g[0]);
+        delay_ms(50);
 //    int16_t GyroX, GyroY, GyroZ;
 //    static float integralX = 0.0f, integralY = 0.0f, integralZ = 0.0f;
 //\
