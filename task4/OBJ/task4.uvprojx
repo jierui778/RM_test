@@ -555,6 +555,11 @@
               <FileType>5</FileType>
               <FilePath>..\HARDWARE\timer.h</FilePath>
             </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\pid.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

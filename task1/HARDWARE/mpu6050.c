@@ -2,6 +2,12 @@
 #include "sys.h"
 #include "delay.h"
 
+
+/**
+ * @brief MPU6050初始化
+ *
+ * @return uint8_t 返回0表示初始化成功，返回1表示初始化失败
+ */
 uint8_t MPU6050_Init()
 {
     uint8_t res;
@@ -11,7 +17,7 @@ uint8_t MPU6050_Init()
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C2, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
 
-    // PB10——SCL PB11——SDA
+    // PB10——SCL PB11——SDA(IIC2)
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -101,6 +107,12 @@ uint8_t MPU6050_SetLPF(uint16_t lpf)
     return MPU6050_WriteByte(MPU_CFG_REG, data); // 设置数字低通滤波器
 }
 
+/**
+ * @brief 设置MPU6050的采样率
+ *
+ * @param rate 采样率(Hz)
+ * @return uint8_t 自动设置LPF为采样率的一半
+ */
 uint8_t MPU6050_SetRate(uint16_t rate)
 {
     uint8_t data;
@@ -132,6 +144,14 @@ short MPU6050_GetTemperature(void)
 // gx,gy,gz:陀螺仪x,y,z轴的原始读数(带符号)
 // 返回值:0,成功
 //     其他,错误代码
+/**
+ * @brief 获取陀螺仪的数据
+ *
+ * @param gx x轴陀螺仪数据
+ * @param gy y轴陀螺仪数据
+ * @param gz z轴陀螺仪数据
+ * @return uint8_t 0：成功，1：失败
+ */
 uint8_t MPU6050_GetGyroscope(short *gx, short *gy, short *gz)
 {
     u8 buf[6], res;
@@ -145,11 +165,14 @@ uint8_t MPU6050_GetGyroscope(short *gx, short *gy, short *gz)
     return res;
     ;
 }
-
-// 得到加速度值(原始值)
-// gx,gy,gz:陀螺仪x,y,z轴的原始读数(带符号)
-// 返回值:0,成功
-//     其他,错误代码
+/**
+ * @brief 获取加速度计的数据
+ *
+ * @param ax x轴加速度计数据
+ * @param ay y轴加速度计数据
+ * @param az z轴加速度计数据
+ * @return uint8_t 0：成功，1：失败
+ */
 uint8_t MPU6050_GetAccelerometer(short *ax, short *ay, short *az)
 {
     uint8_t buf[6], res;
@@ -278,6 +301,14 @@ uint8_t MPU6050_WriteByte(uint8_t addr, uint8_t data)
     I2C_GenerateSTOP(I2C2, ENABLE); // 发送停止信号
     return 0;
 }
+
+
+/**
+ * @brief MPU6050读取一个字节
+ *
+ * @param addr 寄存器地址
+ * @return uint8_t 读取的数据
+ */
 uint8_t MPU6050_ReadByte(uint8_t addr)
 {
     uint8_t data = 0;
