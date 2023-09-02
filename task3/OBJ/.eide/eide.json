@@ -103,7 +103,19 @@
             "path": "../HARDWARE/IMU.c"
           },
           {
+            "path": "../HARDWARE/IMU.h"
+          },
+          {
+            "path": "../HARDWARE/MahonyAHRS.c"
+          },
+          {
+            "path": "../HARDWARE/MahonyAHRS.h"
+          },
+          {
             "path": "../HARDWARE/mpu6050.c"
+          },
+          {
+            "path": "../HARDWARE/timer.c"
           }
         ],
         "folders": []

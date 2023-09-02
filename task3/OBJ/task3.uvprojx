@@ -535,6 +535,26 @@
               <FileType>5</FileType>
               <FilePath>..\HARDWARE\IMU.h</FilePath>
             </File>
+            <File>
+              <FileName>MahonyAHRS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\MahonyAHRS.c</FilePath>
+            </File>
+            <File>
+              <FileName>MahonyAHRS.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\HARDWARE\MahonyAHRS.h</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\HARDWARE\timer.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

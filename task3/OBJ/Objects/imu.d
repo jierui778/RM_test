@@ -31,4 +31,8 @@
 .\objects\imu.o: ..\FWLIB\inc\stm32f10x_wwdg.h
 .\objects\imu.o: ..\FWLIB\inc\misc.h
 .\objects\imu.o: ..\HARDWARE\mpu6050.h
+.\objects\imu.o: ..\HARDWARE\MahonyAHRS.h
+.\objects\imu.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\imu.o: ..\SYSTEM\delay\delay.h
+.\objects\imu.o: ..\SYSTEM\usart\usart.h
+.\objects\imu.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

@@ -37,7 +37,7 @@ uint8_t MPU6050_Init()
     I2C_InitStructure.I2C_OwnAddress1 = 0x00;                                 // 指定第一个设备的地址为7位地址
     I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;                               // 使能ACK信号
     I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit; // 指定7位地址
-    I2C_InitStructure.I2C_ClockSpeed = 400000;
+    I2C_InitStructure.I2C_ClockSpeed = 50000;
 
     I2C_Cmd(I2C2, ENABLE); // 初始化IIC总线
     I2C_Init(I2C2, &I2C_InitStructure);
