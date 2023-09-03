@@ -236,7 +236,3 @@ void IMU_Update(void)
     Yaw = atan2(2 * q1 * q2 + 2 * q0 * q3, -2 * q2 * q2 - 2 * q3 * q3 + 1) * 180 / PI; // yaw
 }
 
-//IMU_Info *IMU_GetInfo(void)
-//{
-//    return &imu;
-//}

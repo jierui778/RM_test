@@ -18,10 +18,8 @@
 //} IMU_Info;
 
 extern volatile float Pitch, Roll, Yaw; //¿ò¼ÜËÄÔªÊý
-//extern IMU_Info imu;
-//IMU_Info imu;
 
-//IMU_Info *IMU_GetInfo(void);
+
 uint8_t IMU_Init(void);
 void IMU_Update(void);
 void MPU6050_ReadGyro_Acc(int16_t *gyro, int16_t *acc);
