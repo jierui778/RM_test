@@ -670,8 +670,8 @@ I (..\FWLIB\inc\stm32f10x_spi.h)(0x64BD1C70)
 I (..\FWLIB\inc\stm32f10x_tim.h)(0x64BD1C70)
 I (..\FWLIB\inc\stm32f10x_usart.h)(0x64BD1C70)
 I (..\FWLIB\inc\misc.h)(0x64BD1C70)
-F (..\HARDWARE\mpu6050.c)(0x64F17A7E)(--gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE\delay -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\mpu6050.o --omf_browse .\objects\mpu6050.crf --depend .\objects\mpu6050.d)
-I (..\HARDWARE\mpu6050.h)(0x64F17A7E)
+F (..\HARDWARE\mpu6050.c)(0x64F357BA)(--gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE\delay -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\mpu6050.o --omf_browse .\objects\mpu6050.crf --depend .\objects\mpu6050.d)
+I (..\HARDWARE\mpu6050.h)(0x64F18D3A)
 I (..\SYSTEM\sys\sys.h)(0x64F0977B)
 I (..\USER\stm32f10x.h)(0x64BD1C70)
 I (..\CORE\core_cm3.h)(0x64BD1C70)
@@ -795,7 +795,7 @@ I (..\FWLIB\inc\stm32f10x_wwdg.h)(0x64BD1C70)
 I (..\FWLIB\inc\misc.h)(0x64BD1C70)
 I (..\SYSTEM\usart\usart.h)(0x64BD1C70)
 I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (..\USER\main.c)(0x64F17B9E)(--gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE\delay -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\USER\main.c)(0x64F4396E)(--gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE\delay -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\USER\stm32f10x.h)(0x64BD1C70)
 I (..\CORE\core_cm3.h)(0x64BD1C70)
 I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -828,7 +828,7 @@ I (..\SYSTEM\usart\usart.h)(0x64BD1C70)
 I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (..\SYSTEM\sys\sys.h)(0x64F0977B)
 I (..\SYSTEM\delay\delay.h)(0x64BD1C70)
-I (..\HARDWARE\mpu6050.h)(0x64F17A7E)
+I (..\HARDWARE\mpu6050.h)(0x64F18D3A)
 F (..\USER\stm32f10x_it.c)(0x64BD1C70)(--gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE\delay -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (..\USER\stm32f10x_it.h)(0x64BD1C70)
 I (..\USER\stm32f10x.h)(0x64BD1C70)

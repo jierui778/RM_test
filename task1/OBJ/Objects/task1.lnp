@@ -34,4 +34,4 @@
 --strict --scatter ".\Objects\task1.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
---list ".\Listings\task1.map" -o .\Objects\task1.axf
+--list ".\Listings\task1.map" -o .\Objects\task1.elf

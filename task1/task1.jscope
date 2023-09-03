@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<JScopeProject>
+    <FileVersion major="1" minor="1" />
+    <Project>
+        <Configuration>
+            <JLink>
+                <Options Connection="1" IsRTTSession="0" IsRTTWithTimeStamp="0" SamplingPeriod="100" SerialNo="0" JTAG_IRPre="0" JTAG_DRPre="0" IP="" TargetDevice="STM32F103ZE" TargetInterface="SWD" InterfaceSpeed="4000" />
+            </JLink>
+            <ElfFile Name="C:\Users\JIERUI\Desktop\test\task1\OBJ\Objects\task1.elf" />
+            <Scope>
+                <Options TimeResolutionUs="1000000" />
+            </Scope>
+        </Configuration>
+        <Windows>
+            <Graph Show="1" />
+            <Watch Show="1" />
+        </Windows>
+        <SelectedSymbols>
+            <Symbol>
+                <Options Name="GZ" Address="0x20000028" Type="short" TypeID="11" Size="2" GraphColorRed="255" GraphColorGreen="0" GraphColorBlue="0" YMinSampled="-16305" YMaxSampled="17412" YAvgSampled="-13.0175" Offset="4" ShowInGraph="0" YOffset="0" IsAutoConfig="0" YResolution="10000" MaxValue="32767" File="..\USER\main.c" Scope="0" DrawStyle="0" NameWithParents="GZ" />
+            </Symbol>
+            <Symbol>
+                <Options Name="GY" Address="0x20000026" Type="short" TypeID="11" Size="2" GraphColorRed="0" GraphColorGreen="0" GraphColorBlue="255" YMinSampled="-28577" YMaxSampled="15978" YAvgSampled="-32.5421" Offset="6" ShowInGraph="0" YOffset="0" IsAutoConfig="0" YResolution="10000" MaxValue="32767" File="..\USER\main.c" Scope="0" DrawStyle="0" NameWithParents="GY" />
+            </Symbol>
+            <Symbol>
+                <Options Name="GX" Address="0x20000024" Type="short" TypeID="11" Size="2" GraphColorRed="0" GraphColorGreen="255" GraphColorBlue="0" YMinSampled="-14792" YMaxSampled="14956" YAvgSampled="36.3473" Offset="8" ShowInGraph="1" YOffset="0" IsAutoConfig="0" YResolution="5000" MaxValue="32767" File="..\USER\main.c" Scope="0" DrawStyle="0" NameWithParents="GX" />
+            </Symbol>
+        </SelectedSymbols>
+    </Project>
+</JScopeProject>

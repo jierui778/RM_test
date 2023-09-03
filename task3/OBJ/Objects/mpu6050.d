@@ -33,4 +33,4 @@
 .\objects\mpu6050.o: ..\SYSTEM\delay\delay.h
 .\objects\mpu6050.o: ..\SYSTEM\usart\usart.h
 .\objects\mpu6050.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\mpu6050.o: ..\HARDWARE\imu.h
+.\objects\mpu6050.o: ..\HARDWARE\IMU.h

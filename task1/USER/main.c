@@ -3,7 +3,7 @@
 #include "delay.h"
 #include "mpu6050.h"
 
-
+int16_t AX, AY, AZ, GX, GY, GZ;
 int main(void)
 {
      delay_init();
@@ -11,16 +11,18 @@ int main(void)
     int t;
 
     MPU6050_Init();
-    int16_t AX, AY, AZ, GX, GY, GZ;
+
 
 
 
     while (1)
     {
         t=MPU6050_GetTemperature();
-        MPU6050_GetGyroscope(&GX,&GY,&GZ);     // µÃµ½ÍÓÂÝÒÇÖµ
-        MPU6050_GetAccelerometer(&AX,&AY,&AZ); // µÃµ½¼ÓËÙ¶ÈÖµ
-        printf("%d\n",t);
+        MPU6050_GetGyroscope(&GX,&GY,&GZ);     // å¾—åˆ°é™€èžºä»ªå€¼
+        MPU6050_GetAccelerometer(&AX,&AY,&AZ); // å¾—åˆ°åŠ é€Ÿåº¦å€¼
+        // printf("%d\n",t);
+        printf("%d %d %d\n",GX,GY,GZ);
+        // printf("%d %d %d\n",AX,AY,AZ);
 
 
 
