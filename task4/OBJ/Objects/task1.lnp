@@ -28,6 +28,8 @@
 ".\objects\imu.o"
 ".\objects\mahonyahrs.o"
 ".\objects\timer.o"
+".\objects\pid.o"
+".\objects\can.o"
 ".\objects\delay.o"
 ".\objects\sys.o"
 ".\objects\usart.o"

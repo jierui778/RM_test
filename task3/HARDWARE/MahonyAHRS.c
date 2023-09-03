@@ -1,6 +1,6 @@
 #include "MahonyAHRS.h"
 
-#define twoKpDef (2.0f * 0.4f) //
+#define twoKpDef (2.0f * 7.9f) //
 #define twoKiDef (2.0f * 0.8f) // 2 * integral gain
 
 volatile float twoKp = twoKpDef;                           // 2 * proportional gain (Kp)

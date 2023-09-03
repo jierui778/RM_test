@@ -30,7 +30,7 @@ void TIM3_IRQHandler(void)
 {
     if(TIM_GetITStatus(TIM3,TIM_IT_Update)==SET)
     {
-        IMU_Update();
+//        IMU_Update();
     }
     TIM_ClearITPendingBit(TIM3,TIM_IT_Update);
 

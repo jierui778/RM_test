@@ -35,3 +35,4 @@
 .\objects\main.o: ..\HARDWARE\mpu6050.h
 .\objects\main.o: ..\HARDWARE\imu.h
 .\objects\main.o: ..\HARDWARE\timer.h
+.\objects\main.o: ..\HARDWARE\can.h
