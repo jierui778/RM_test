@@ -25,7 +25,7 @@ int main(void)
         IMU_Update();
         // MPU6050_ReadGyro_Acc(&g[0], &a[0]);
         //        printf("%f %f %f\n", IMU.Pitch,IMU.Roll, IMU.Yaw);
-        printf("%f %f %f\n", Pitch, Roll, Yaw);
+        printf("%f,%f,%f\n", Pitch, Roll, Yaw);
         //        printf("%d %d %d\n", g[0],g[1], g[2]);
         //        printf("%d %d %d\n", a[0],a[1], a[2]);
         //        printf("%d %d %d\n", AX,AY, AZ);
