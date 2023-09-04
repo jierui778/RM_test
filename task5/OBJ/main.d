@@ -59,3 +59,4 @@
 ..\obj\main.o: ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
 ..\obj\main.o: ..\SYSTEM\usart\usart.h
+..\obj\main.o: ..\HARDWARE\mpu6050.h

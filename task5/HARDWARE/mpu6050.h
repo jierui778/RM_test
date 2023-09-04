@@ -1,7 +1,7 @@
 #ifndef __MPU6050_H
 #define __MPU6050_H
 #include "sys.h"
-
+#include "stm32f1xx_hal.h"
 //#define MPU_ACCEL_OFFS_REG		0X06	//accel_offs寄存器,可读取版本号,寄存器手册未提到
 //#define MPU_PROD_ID_REG			0X0C	//prod id寄存器,在寄存器手册未提到
 #define MPU_SELF_TESTX_REG		0X0D	//自检寄存器X
@@ -75,7 +75,7 @@
 //如果接V3.3,则IIC地址为0X69(不包含最低位).
 //#define MPU_ADDR				0X68
 #define MPU_ADDR    0xD0
-extern I2C_HandleTypeDef hi2c2;
+// extern I2C_HandleTypeDef hi2c2;
 uint8_t MPU6050_Init(void); // 初始化MPU6050
 // uint8_t MPU6050_DetectOnline();//检测MPU6050是否在线
 

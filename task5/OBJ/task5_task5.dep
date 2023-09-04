@@ -1,6 +1,6 @@
 Dependencies for Project 'task5', Target 'task5': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\main.c)(0x64F49A88)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\main.o --depend ..\obj\main.d)
+F (.\main.c)(0x64F562CA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\sys\sys.h)(0x59254214)
 I (..\USER\stm32f1xx.h)(0x571DE09E)
 I (..\USER\stm32f103xe.h)(0x571DE09E)
@@ -60,7 +60,8 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
 I (..\SYSTEM\delay\delay.h)(0x592658E2)
 I (..\SYSTEM\usart\usart.h)(0x59253964)
-F (.\stm32f1xx_it.c)(0x572072FE)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_it.o --depend ..\obj\stm32f1xx_it.d)
+I (..\HARDWARE\mpu6050.h)(0x64F559DA)
+F (.\stm32f1xx_it.c)(0x572072FE)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_it.o --omf_browse ..\obj\stm32f1xx_it.crf --depend ..\obj\stm32f1xx_it.d)
 I (main.h)(0x59253842)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
@@ -119,7 +120,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
 I (stm32f1xx_it.h)(0x572072FE)
-F (.\system_stm32f1xx.c)(0x571DE09E)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\system_stm32f1xx.o --depend ..\obj\system_stm32f1xx.d)
+F (.\system_stm32f1xx.c)(0x571DE09E)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\system_stm32f1xx.o --omf_browse ..\obj\system_stm32f1xx.crf --depend ..\obj\system_stm32f1xx.d)
 I (stm32f1xx.h)(0x571DE09E)
 I (stm32f103xe.h)(0x571DE09E)
 I (..\CORE\core_cm3.h)(0x563336C6)
@@ -177,7 +178,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (.\stm32f1xx_hal_msp.c)(0x572072FE)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_msp.o --depend ..\obj\stm32f1xx_hal_msp.d)
+F (.\stm32f1xx_hal_msp.c)(0x572072FE)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_msp.o --omf_browse ..\obj\stm32f1xx_hal_msp.crf --depend ..\obj\stm32f1xx_hal_msp.d)
 I (main.h)(0x59253842)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
@@ -240,8 +241,8 @@ F (..\CORE\cmsis_armcc.h)(0x563336C6)()
 F (..\CORE\core_cmFunc.h)(0x563336C6)()
 F (..\CORE\core_cmInstr.h)(0x563336C6)()
 F (..\CORE\core_cmSimd.h)(0x563336C6)()
-F (..\CORE\startup_stm32f103xe.s)(0x571DE09E)(--cpu Cortex-M3 -g --apcs=interwork -IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32F10X_HD SETA 1"--list ..\obj\startup_stm32f103xe.lst --xref -o ..\obj\startup_stm32f103xe.o --depend ..\obj\startup_stm32f103xe.d)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c)(0x571E2D60)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal.o --depend ..\obj\stm32f1xx_hal.d)
+F (..\CORE\startup_stm32f103xe.s)(0x571DE09E)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32F10X_HD SETA 1"--list ..\obj\startup_stm32f103xe.lst --xref -o ..\obj\startup_stm32f103xe.o --depend ..\obj\startup_stm32f103xe.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c)(0x571E2D60)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal.o --omf_browse ..\obj\stm32f1xx_hal.crf --depend ..\obj\stm32f1xx_hal.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -298,7 +299,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_adc.o --depend ..\obj\stm32f1xx_hal_adc.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_adc.o --omf_browse ..\obj\stm32f1xx_hal_adc.crf --depend ..\obj\stm32f1xx_hal_adc.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -355,7 +356,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_adc_ex.o --depend ..\obj\stm32f1xx_hal_adc_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_adc_ex.o --omf_browse ..\obj\stm32f1xx_hal_adc_ex.crf --depend ..\obj\stm32f1xx_hal_adc_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -412,7 +413,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_can.o --depend ..\obj\stm32f1xx_hal_can.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_can.o --omf_browse ..\obj\stm32f1xx_hal_can.crf --depend ..\obj\stm32f1xx_hal_can.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -469,7 +470,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cec.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_cec.o --depend ..\obj\stm32f1xx_hal_cec.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cec.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_cec.o --omf_browse ..\obj\stm32f1xx_hal_cec.crf --depend ..\obj\stm32f1xx_hal_cec.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -526,7 +527,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_cortex.o --depend ..\obj\stm32f1xx_hal_cortex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_cortex.o --omf_browse ..\obj\stm32f1xx_hal_cortex.crf --depend ..\obj\stm32f1xx_hal_cortex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -583,7 +584,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_crc.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_crc.o --depend ..\obj\stm32f1xx_hal_crc.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_crc.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_crc.o --omf_browse ..\obj\stm32f1xx_hal_crc.crf --depend ..\obj\stm32f1xx_hal_crc.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -640,7 +641,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_dac.o --depend ..\obj\stm32f1xx_hal_dac.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_dac.o --omf_browse ..\obj\stm32f1xx_hal_dac.crf --depend ..\obj\stm32f1xx_hal_dac.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -697,7 +698,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_dac_ex.o --depend ..\obj\stm32f1xx_hal_dac_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_dac_ex.o --omf_browse ..\obj\stm32f1xx_hal_dac_ex.crf --depend ..\obj\stm32f1xx_hal_dac_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -754,7 +755,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_dma.o --depend ..\obj\stm32f1xx_hal_dma.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_dma.o --omf_browse ..\obj\stm32f1xx_hal_dma.crf --depend ..\obj\stm32f1xx_hal_dma.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -811,7 +812,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_eth.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_eth.o --depend ..\obj\stm32f1xx_hal_eth.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_eth.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_eth.o --omf_browse ..\obj\stm32f1xx_hal_eth.crf --depend ..\obj\stm32f1xx_hal_eth.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -868,7 +869,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_flash.o --depend ..\obj\stm32f1xx_hal_flash.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_flash.o --omf_browse ..\obj\stm32f1xx_hal_flash.crf --depend ..\obj\stm32f1xx_hal_flash.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -925,7 +926,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_flash_ex.o --depend ..\obj\stm32f1xx_hal_flash_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_flash_ex.o --omf_browse ..\obj\stm32f1xx_hal_flash_ex.crf --depend ..\obj\stm32f1xx_hal_flash_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -982,7 +983,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_gpio.o --depend ..\obj\stm32f1xx_hal_gpio.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_gpio.o --omf_browse ..\obj\stm32f1xx_hal_gpio.crf --depend ..\obj\stm32f1xx_hal_gpio.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1039,7 +1040,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_gpio_ex.o --depend ..\obj\stm32f1xx_hal_gpio_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_gpio_ex.o --omf_browse ..\obj\stm32f1xx_hal_gpio_ex.crf --depend ..\obj\stm32f1xx_hal_gpio_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1096,7 +1097,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_hcd.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_hcd.o --depend ..\obj\stm32f1xx_hal_hcd.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_hcd.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_hcd.o --omf_browse ..\obj\stm32f1xx_hal_hcd.crf --depend ..\obj\stm32f1xx_hal_hcd.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1153,7 +1154,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_i2c.o --depend ..\obj\stm32f1xx_hal_i2c.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_i2c.o --omf_browse ..\obj\stm32f1xx_hal_i2c.crf --depend ..\obj\stm32f1xx_hal_i2c.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1210,7 +1211,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2s.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_i2s.o --depend ..\obj\stm32f1xx_hal_i2s.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2s.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_i2s.o --omf_browse ..\obj\stm32f1xx_hal_i2s.crf --depend ..\obj\stm32f1xx_hal_i2s.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1267,7 +1268,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_irda.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_irda.o --depend ..\obj\stm32f1xx_hal_irda.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_irda.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_irda.o --omf_browse ..\obj\stm32f1xx_hal_irda.crf --depend ..\obj\stm32f1xx_hal_irda.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1324,7 +1325,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_iwdg.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_iwdg.o --depend ..\obj\stm32f1xx_hal_iwdg.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_iwdg.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_iwdg.o --omf_browse ..\obj\stm32f1xx_hal_iwdg.crf --depend ..\obj\stm32f1xx_hal_iwdg.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1381,7 +1382,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_nand.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_nand.o --depend ..\obj\stm32f1xx_hal_nand.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_nand.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_nand.o --omf_browse ..\obj\stm32f1xx_hal_nand.crf --depend ..\obj\stm32f1xx_hal_nand.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1438,7 +1439,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_nor.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_nor.o --depend ..\obj\stm32f1xx_hal_nor.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_nor.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_nor.o --omf_browse ..\obj\stm32f1xx_hal_nor.crf --depend ..\obj\stm32f1xx_hal_nor.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1495,7 +1496,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pccard.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_pccard.o --depend ..\obj\stm32f1xx_hal_pccard.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pccard.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_pccard.o --omf_browse ..\obj\stm32f1xx_hal_pccard.crf --depend ..\obj\stm32f1xx_hal_pccard.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1552,7 +1553,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_pcd.o --depend ..\obj\stm32f1xx_hal_pcd.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_pcd.o --omf_browse ..\obj\stm32f1xx_hal_pcd.crf --depend ..\obj\stm32f1xx_hal_pcd.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1609,7 +1610,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_pcd_ex.o --depend ..\obj\stm32f1xx_hal_pcd_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_pcd_ex.o --omf_browse ..\obj\stm32f1xx_hal_pcd_ex.crf --depend ..\obj\stm32f1xx_hal_pcd_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1666,7 +1667,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_pwr.o --depend ..\obj\stm32f1xx_hal_pwr.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_pwr.o --omf_browse ..\obj\stm32f1xx_hal_pwr.crf --depend ..\obj\stm32f1xx_hal_pwr.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1723,7 +1724,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_rcc.o --depend ..\obj\stm32f1xx_hal_rcc.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_rcc.o --omf_browse ..\obj\stm32f1xx_hal_rcc.crf --depend ..\obj\stm32f1xx_hal_rcc.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1780,7 +1781,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_rcc_ex.o --depend ..\obj\stm32f1xx_hal_rcc_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_rcc_ex.o --omf_browse ..\obj\stm32f1xx_hal_rcc_ex.crf --depend ..\obj\stm32f1xx_hal_rcc_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1837,7 +1838,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rtc.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_rtc.o --depend ..\obj\stm32f1xx_hal_rtc.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rtc.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_rtc.o --omf_browse ..\obj\stm32f1xx_hal_rtc.crf --depend ..\obj\stm32f1xx_hal_rtc.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1894,7 +1895,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rtc_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_rtc_ex.o --depend ..\obj\stm32f1xx_hal_rtc_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rtc_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_rtc_ex.o --omf_browse ..\obj\stm32f1xx_hal_rtc_ex.crf --depend ..\obj\stm32f1xx_hal_rtc_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -1951,7 +1952,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sd.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_sd.o --depend ..\obj\stm32f1xx_hal_sd.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sd.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_sd.o --omf_browse ..\obj\stm32f1xx_hal_sd.crf --depend ..\obj\stm32f1xx_hal_sd.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2008,7 +2009,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_smartcard.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_smartcard.o --depend ..\obj\stm32f1xx_hal_smartcard.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_smartcard.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_smartcard.o --omf_browse ..\obj\stm32f1xx_hal_smartcard.crf --depend ..\obj\stm32f1xx_hal_smartcard.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2065,7 +2066,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_spi.o --depend ..\obj\stm32f1xx_hal_spi.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_spi.o --omf_browse ..\obj\stm32f1xx_hal_spi.crf --depend ..\obj\stm32f1xx_hal_spi.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2122,7 +2123,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_spi_ex.o --depend ..\obj\stm32f1xx_hal_spi_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_spi_ex.o --omf_browse ..\obj\stm32f1xx_hal_spi_ex.crf --depend ..\obj\stm32f1xx_hal_spi_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2179,7 +2180,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sram.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_sram.o --depend ..\obj\stm32f1xx_hal_sram.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sram.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_sram.o --omf_browse ..\obj\stm32f1xx_hal_sram.crf --depend ..\obj\stm32f1xx_hal_sram.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2236,7 +2237,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_tim.o --depend ..\obj\stm32f1xx_hal_tim.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_tim.o --omf_browse ..\obj\stm32f1xx_hal_tim.crf --depend ..\obj\stm32f1xx_hal_tim.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2293,7 +2294,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_tim_ex.o --depend ..\obj\stm32f1xx_hal_tim_ex.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_tim_ex.o --omf_browse ..\obj\stm32f1xx_hal_tim_ex.crf --depend ..\obj\stm32f1xx_hal_tim_ex.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2350,7 +2351,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_uart.o --depend ..\obj\stm32f1xx_hal_uart.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_uart.o --omf_browse ..\obj\stm32f1xx_hal_uart.crf --depend ..\obj\stm32f1xx_hal_uart.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2407,7 +2408,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_usart.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_usart.o --depend ..\obj\stm32f1xx_hal_usart.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_usart.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_usart.o --omf_browse ..\obj\stm32f1xx_hal_usart.crf --depend ..\obj\stm32f1xx_hal_usart.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2464,7 +2465,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_wwdg.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_wwdg.o --depend ..\obj\stm32f1xx_hal_wwdg.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_wwdg.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_hal_wwdg.o --omf_browse ..\obj\stm32f1xx_hal_wwdg.crf --depend ..\obj\stm32f1xx_hal_wwdg.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2521,7 +2522,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_fsmc.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_ll_fsmc.o --depend ..\obj\stm32f1xx_ll_fsmc.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_fsmc.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_ll_fsmc.o --omf_browse ..\obj\stm32f1xx_ll_fsmc.crf --depend ..\obj\stm32f1xx_ll_fsmc.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2578,7 +2579,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_sdmmc.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_ll_sdmmc.o --depend ..\obj\stm32f1xx_ll_sdmmc.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_sdmmc.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_ll_sdmmc.o --omf_browse ..\obj\stm32f1xx_ll_sdmmc.crf --depend ..\obj\stm32f1xx_ll_sdmmc.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2635,7 +2636,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c)(0x571E2CFA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_ll_usb.o --depend ..\obj\stm32f1xx_ll_usb.d)
+F (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c)(0x571E2CFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\stm32f1xx_ll_usb.o --omf_browse ..\obj\stm32f1xx_ll_usb.crf --depend ..\obj\stm32f1xx_ll_usb.d)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
 I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
@@ -2692,7 +2693,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\SYSTEM\delay\delay.c)(0x592659B6)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\delay.o --depend ..\obj\delay.d)
+F (..\SYSTEM\delay\delay.c)(0x592659B6)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
 I (..\SYSTEM\delay\delay.h)(0x592658E2)
 I (..\SYSTEM\sys\sys.h)(0x59254214)
 I (..\USER\stm32f1xx.h)(0x571DE09E)
@@ -2751,7 +2752,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\SYSTEM\sys\sys.c)(0x5925412C)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\sys.o --depend ..\obj\sys.d)
+F (..\SYSTEM\sys\sys.c)(0x5925412C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
 I (..\SYSTEM\sys\sys.h)(0x59254214)
 I (..\USER\stm32f1xx.h)(0x571DE09E)
 I (..\USER\stm32f103xe.h)(0x571DE09E)
@@ -2809,7 +2810,7 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
-F (..\SYSTEM\usart\usart.c)(0x59266884)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\usart.o --depend ..\obj\usart.d)
+F (..\SYSTEM\usart\usart.c)(0x59266884)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
 I (..\SYSTEM\sys\sys.h)(0x59254214)
 I (..\USER\stm32f1xx.h)(0x571DE09E)
 I (..\USER\stm32f103xe.h)(0x571DE09E)
@@ -2869,8 +2870,8 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
 I (..\SYSTEM\usart\usart.h)(0x59253964)
 F (..\readme.txt)(0x00000000)()
-F (..\HARDWARE\mpu6050.c)(0x64F49FDA)(-c --cpu Cortex-M3 -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\mpu6050.o --depend ..\obj\mpu6050.d)
-I (..\HARDWARE\mpu6050.h)(0x64F49E26)
+F (..\HARDWARE\mpu6050.c)(0x64F55BD8)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\mpu6050.o --omf_browse ..\obj\mpu6050.crf --depend ..\obj\mpu6050.d)
+I (..\HARDWARE\mpu6050.h)(0x64F559DA)
 I (..\SYSTEM\sys\sys.h)(0x59254214)
 I (..\USER\stm32f1xx.h)(0x571DE09E)
 I (..\USER\stm32f103xe.h)(0x571DE09E)
@@ -2929,3 +2930,63 @@ I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
 I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
 I (..\SYSTEM\delay\delay.h)(0x592658E2)
+F (..\HARDWARE\i2c.c)(0x583CD3E2)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\OBJ -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc -I ..\HARDWARE-IC:\Users\JIERUI\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\obj\i2c.o --omf_browse ..\obj\i2c.crf --depend ..\obj\i2c.d)
+I (..\HARDWARE\i2c.h)(0x583CD3E2)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x571E2CFA)
+I (..\USER\stm32f1xx_hal_conf.h)(0x572072FE)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x571E2F9E)
+I (..\USER\stm32f1xx.h)(0x571DE09E)
+I (..\USER\stm32f103xe.h)(0x571DE09E)
+I (..\CORE\core_cm3.h)(0x563336C6)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\CORE\core_cmInstr.h)(0x563336C6)
+I (..\CORE\cmsis_armcc.h)(0x563336C6)
+I (..\CORE\core_cmFunc.h)(0x563336C6)
+I (..\USER\system_stm32f1xx.h)(0x571DE09E)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x571E2F9E)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_eth.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cec.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_crc.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sram.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_fsmc.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nor.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2s.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_iwdg.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pccard.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_sdmmc.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nand.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_usart.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_irda.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_smartcard.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_wwdg.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x571E2CFA)
+I (..\HAL_DRIVER\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x571E2CFA)
+I (..\USER\main.h)(0x59253842)
+I (..\HARDWARE\gpio.h)(0x583CD3E2)

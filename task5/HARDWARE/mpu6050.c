@@ -2,7 +2,6 @@
 #include "sys.h"
 #include "delay.h"
 
-
 /**
  * @brief MPU6050初始化
  *
@@ -11,32 +10,32 @@
 uint8_t MPU6050_Init()
 {
     uint8_t res;
-    GPIO_InitTypeDef GPIO_InitStructure;
-    I2C_InitTypeDef I2C_InitStructure;
+    //    GPIO_InitTypeDef GPIO_InitStructure;
+    //    I2C_InitTypeDef I2C_InitStructure;
 
-    RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C2, ENABLE);
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    I2C_HandleTypeDef hi2c2;
+    HAL_I2C_Init(&hi2c2);
+    //    RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C2, ENABLE);
+    //    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
 
-    // PB10——SCL PB11——SDA(IIC2)
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
-    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11;
-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(GPIOB, &GPIO_InitStructure);
+    //    // PB10——SCL PB11——SDA(IIC2)
+    //    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
+    //    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11;
+    //    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    //    GPIO_Init(GPIOB, &GPIO_InitStructure);
 
-    I2C_DeInit(I2C2);
-    I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;					//设置为IIC模式
-	I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;			//设置IIC的占空比，低电平除以高电平值为2
-	I2C_InitStructure.I2C_OwnAddress1 = 0x00;		//指定第一个设备的地址为7位地址
-	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;					//使能ACK信号
-	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;	//指定7位地址
-	I2C_InitStructure.I2C_ClockSpeed = 400000;
+    //    I2C_DeInit(I2C2);
+    //    I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;					//设置为IIC模式
+    //	I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;			//设置IIC的占空比，低电平除以高电平值为2
+    //	I2C_InitStructure.I2C_OwnAddress1 = 0x00;		//指定第一个设备的地址为7位地址
+    //	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;					//使能ACK信号
+    //	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;	//指定7位地址
+    //	I2C_InitStructure.I2C_ClockSpeed = 400000;
 
-    I2C_Cmd(I2C2, ENABLE); // 初始化IIC总线
-    I2C_Init(I2C2, &I2C_InitStructure);
-
+    //    I2C_Cmd(I2C2, ENABLE); // 初始化IIC总线
+    //    I2C_Init(I2C2, &I2C_InitStructure);
 
     MPU6050_WriteByte(MPU_PWR_MGMT1_REG, 0X80); // 复位MPU6050
-    delay_ms(10);
     MPU6050_WriteByte(MPU_PWR_MGMT1_REG, 0X00); // 唤醒MPU6050
     MPU6050_SetGyroFsr(3);                      // 陀螺仪传感器,±2000dps
     MPU6050_SetAccelFsr(0);                     // 加速度传感器，±2g
@@ -197,36 +196,8 @@ uint8_t MPU6050_GetAccelerometer(short *ax, short *ay, short *az)
 uint8_t MPU6050_WriteLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
 {
 
-    return HAL_I2C_Mem_Read(&hi2c2, addr, reg, 1, buf, len, 0xfff);
-    // while (I2C_GetFlagStatus(I2C2, I2C_FLAG_BUSY))
-    //     ; // 主机判忙
-    // I2C_GenerateSTART(I2C2, ENABLE);
-    // // check EV5
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_MODE_SELECT) != SUCCESS)
-    //     ;
-
-    // I2C_Send7bitAddress(I2C2, addr, I2C_Direction_Transmitter);
-    // // check EV6
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED) != SUCCESS)
-    //     ;
-
-    // I2C_SendData(I2C2, reg);
-    // // check EV8_2
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_BYTE_TRANSMITTED) != SUCCESS)
-    //     ;
-
-    // /* 参考上图，页写入与单个写入的差别，仅仅是停止信号的发送 */
-    // /* 加入判断即可 */
-    // while (len)
-    // {
-    //     I2C_SendData(I2C2, *buf);
-    //     // check EV8_2
-    //     while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_BYTE_TRANSMITTED) != SUCCESS)
-    //         ;
-    //     buf++;
-    //     len--;
-    // }
-    // I2C_GenerateSTOP(I2C2, ENABLE);
+    I2C_HandleTypeDef hi2c2;
+    HAL_I2C_Mem_Read(&hi2c2, addr, reg, I2C_MEMADD_SIZE_8BIT, buf, len, 0xfff);
     return 0;
 }
 /**
@@ -239,43 +210,8 @@ uint8_t MPU6050_WriteLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
  */
 uint8_t MPU6050_ReadLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
 {
-    return HAL_I2C_Mem_Read(&hi2c2, addr, reg, 1, buf, len, 0xfff);
-    // while (I2C_GetFlagStatus(I2C2, I2C_FLAG_BUSY))
-    //     ;                            // 主机判忙
-    // I2C_GenerateSTART(I2C2, ENABLE); // 发送起始信号
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_MODE_SELECT) != SUCCESS)
-    //     ;
-    // I2C_Send7bitAddress(I2C2, MPU_ADDR, I2C_Direction_Transmitter);
-
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED) != SUCCESS)
-    //     ;
-    // I2C_Cmd(I2C2, ENABLE);
-    // I2C_SendData(I2C2, reg);
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_BYTE_TRANSMITTED) != SUCCESS)
-    //     ;
-
-    // I2C_GenerateSTART(I2C2, ENABLE);
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_MODE_SELECT) != SUCCESS)
-    //     ;
-    // I2C_Send7bitAddress(I2C2, MPU_ADDR, I2C_Direction_Receiver);
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED) != SUCCESS)
-    //     ;
-    // while (len)
-    // {
-    //     if (len == 1)
-    //     {
-    //         I2C_AcknowledgeConfig(I2C2, DISABLE);
-    //         I2C_GenerateSTOP(I2C2, ENABLE);
-    //     }
-    //     while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_BYTE_RECEIVED) != SUCCESS)
-    //         ;
-    //     {
-    //         *buf = I2C_ReceiveData(I2C2);
-    //         buf++;
-    //         len--;
-    //     } // 这个中括号表示连续读取
-    // }
-    // I2C_AcknowledgeConfig(I2C2, ENABLE);
+    I2C_HandleTypeDef hi2c2;
+    HAL_I2C_Mem_Read(&hi2c2, addr, reg, I2C_MEMADD_SIZE_8BIT, buf, len, 0xfff);
     return 0;
 }
 /**
@@ -286,25 +222,10 @@ uint8_t MPU6050_ReadLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
  */
 uint8_t MPU6050_WriteByte(uint8_t reg, uint8_t data)
 {
-    // while (I2C_GetFlagStatus(I2C2, I2C_FLAG_BUSY));
-    // I2C_GenerateSTART(I2C2, ENABLE); // 发送起始信号
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_MODE_SELECT) != SUCCESS)
-    //     ;                                                           // 等待EV5
-    // I2C_Send7bitAddress(I2C2, MPU_ADDR, I2C_Direction_Transmitter); // 发送挂在在I2C上设备的地址
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED) != SUCCESS)
-    //     ; // 等待EV6
-    // // EV8_1事件不需要等待，它是告诉该写入DR发送数据了，下一步直接写入数据
-    // I2C_SendData(I2C2, addr); // 发送写入设备的内部地址
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_BYTE_TRANSMITTED) != SUCCESS)
-    //     ;                     // 等待EV8
-    // I2C_SendData(I2C2, data); // 发送写入的数据
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_BYTE_TRANSMITTED) != SUCCESS)
-    //     ;                           // 等待EV8_2事件
-    // I2C_GenerateSTOP(I2C2, ENABLE); // 发送停止信号
+    I2C_HandleTypeDef hi2c2;
     HAL_I2C_Mem_Write(&hi2c2, MPU_ADDR, reg, I2C_MEMADD_SIZE_8BIT, &data, 1, 0xfff);
     return 0;
 }
-
 
 /**
  * @brief MPU6050读取一个字节
@@ -316,35 +237,7 @@ uint8_t MPU6050_ReadByte(uint8_t reg)
 {
 
     uint8_t R_Data;
+    I2C_HandleTypeDef hi2c2;
     HAL_I2C_Mem_Read(&hi2c2, MPU_ADDR, reg, I2C_MEMADD_SIZE_8BIT, &R_Data, 1, 0xfff);
     return R_Data;
-    // uint8_t data = 0;
-    // while (I2C_GetFlagStatus(I2C2, I2C_FLAG_BUSY))
-    //     ;                            // 主机判忙
-    // I2C_GenerateSTART(I2C2, ENABLE); // 发送起始信号
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_MODE_SELECT) != SUCCESS)
-    //     ;                                                           // 等待EV5                                                                 // 应答
-    // I2C_Send7bitAddress(I2C2, MPU_ADDR, I2C_Direction_Transmitter); // 发送设备地址
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED) != SUCCESS)
-    //     ;                     // 等待EV6
-    // I2C_Cmd(I2C2, ENABLE);    // 清除事件EV6
-    // I2C_SendData(I2C2, addr); // 发送要读取设备的内部地址
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_BYTE_TRANSMITTING) != SUCCESS)
-    //     ;                            // 等待EV8
-    // I2C_GenerateSTART(I2C2, ENABLE); // 发送第二次起始信号
-
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_MODE_SELECT) != SUCCESS)
-    //     ;                                                        // 等待EV5
-    // I2C_Send7bitAddress(I2C2, MPU_ADDR, I2C_Direction_Receiver); // 发送设备地址
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED) != SUCCESS)
-    //     ;                                 // 等待EV6
-    // I2C_AcknowledgeConfig(I2C2, DISABLE); // 关闭ACK使能
-    // while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_BYTE_RECEIVED) != SUCCESS)
-    //     ;                                // 等待EV7
-    // data = I2C_ReceiveData(I2C2);        // 读取数据
-    // I2C_GenerateSTOP(I2C2, ENABLE);      // 发送停止信号
-    // I2C_AcknowledgeConfig(I2C2, ENABLE); // //传输完毕，再次打开ACK使能
-    // return data;
-    // 返回读取数据
 }
-
