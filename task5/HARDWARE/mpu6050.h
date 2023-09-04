@@ -1,7 +1,11 @@
 #ifndef __MPU6050_H
 #define __MPU6050_H
-#include "sys.h"
+#include "main.h"
 #include "stm32f1xx_hal.h"
+
+#include "main.h"
+
+
 //#define MPU_ACCEL_OFFS_REG		0X06	//accel_offs寄存器,可读取版本号,寄存器手册未提到
 //#define MPU_PROD_ID_REG			0X0C	//prod id寄存器,在寄存器手册未提到
 #define MPU_SELF_TESTX_REG		0X0D	//自检寄存器X

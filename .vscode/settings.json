@@ -3,6 +3,9 @@
         "iic.h": "c",
         "sys.h": "c",
         "mpu6050.h": "c",
-        "imu.h": "c"
+        "imu.h": "c",
+        "main.h": "c",
+        "stm32f1xx_hal.h": "c",
+        "i2c.h": "c"
     }
 }
