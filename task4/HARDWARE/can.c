@@ -1,5 +1,15 @@
 #include "can.h"
 
+/**
+ * @brief CAN1初始化
+ *
+ * @param tsjw 重新同步跳跃宽度为一个时间单位
+ * @param tbs2 时间段2占用8个时间单位
+ * @param tbs1 时间段1占用6个时间单位
+ * @param brp 分频系数（Fdiv）
+ * @param mode 模式设置：mode:0,普通模式;1,回环模式;
+ * @return uint8_t
+ */
 uint8_t CAN1_Init(uint8_t tsjw, uint8_t tbs2, uint8_t tbs1, uint16_t brp, uint8_t mode)
 {
     GPIO_InitTypeDef GPIO_InitStructure;           // 定义结构体GPIO_InitStructure，用来配置CAN的引脚

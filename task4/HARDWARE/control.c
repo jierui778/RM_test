@@ -1,7 +1,7 @@
 #include "control.h"
-#include "motor.h"
-#include "angle.h"
 #include "pid.h"
+#include "can.h"
+#include "imu.h"
 /**
  * @description: 模块全部初始化
  * @return {*}
@@ -18,6 +18,7 @@ void Control_Init(void)
  */
 void Control_Run(void)
 {
+    
 
 
 
@@ -29,7 +30,7 @@ void Control_Run(void)
  * @return {*}
  */
 
-int ChangeSpeedMotorL(int NowAngleValueL, int TargetSpeedL)
+int16_t ChangeSpeedMotorL(int NowAngleValueL, int TargetSpeedL)
 {
     int pwm=0;
     int bias=0;

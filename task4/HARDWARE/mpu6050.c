@@ -5,17 +5,11 @@
 #include "imu.h"
 
 
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * @brief  MPU6050初始化
+ *
+ * @return uint8_t 0：成功，1：失败
+ */
 uint8_t MPU6050_Init()
 {
     uint8_t res;
@@ -114,7 +108,12 @@ uint8_t MPU6050_SetLPF(uint16_t lpf)
         data = 6;
     return MPU6050_WriteByte(MPU_CFG_REG, data); // 设置数字低通滤波器
 }
-
+/**
+ * @brief  设置MPU6050的采样率(假定Fs=1KHz)
+ *
+ * @param rate 4~1000(Hz)
+ * @return uint8_t 0,设置成功  其他,设置失败
+ */
 uint8_t MPU6050_SetRate(uint16_t rate)
 {
     uint8_t data;

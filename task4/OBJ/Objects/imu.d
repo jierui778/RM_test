@@ -1,5 +1,5 @@
 .\objects\imu.o: ..\HARDWARE\IMU.c
-.\objects\imu.o: ..\HARDWARE\imu.h
+.\objects\imu.o: ..\HARDWARE\IMU.h
 .\objects\imu.o: ..\SYSTEM\sys\sys.h
 .\objects\imu.o: ..\USER\stm32f10x.h
 .\objects\imu.o: ..\CORE\core_cm3.h

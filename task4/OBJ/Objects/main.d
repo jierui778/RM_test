@@ -36,3 +36,4 @@
 .\objects\main.o: ..\HARDWARE\imu.h
 .\objects\main.o: ..\HARDWARE\timer.h
 .\objects\main.o: ..\HARDWARE\can.h
+.\objects\main.o: ..\HARDWARE\control.h

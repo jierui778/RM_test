@@ -5,6 +5,7 @@
 #include "imu.h"
 #include "timer.h"
 #include "can.h"
+#include "control.h"
 
 int main(void)
 {

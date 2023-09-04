@@ -3,5 +3,6 @@
 #include "sys.h"
 
 
-void TIM3_Init(u16 arr,u16 psc);
+void TIM3_Init(u16 arr,u16 psc);//初始化定时器3
+
 #endif

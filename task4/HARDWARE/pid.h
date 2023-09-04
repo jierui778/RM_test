@@ -13,17 +13,8 @@ typedef struct
 }PID;
 //PID控制器参数结构体
 
-// /*外部结构体声明*/
-// extern PID x_dir;//定义x方向PID参数结构体，在这里设置速度PID参数
-// extern PID y_dir;//定义yPID参数结构体，在这里设置转向PID参数
-// /**/
-extern int16_t Position_PID(float deviation, PID pid);
-extern int16_t Position_PID2(float deviation,PID pid);
-extern int16_t PositionPIDToSpeed_l(float deviation,PID pid);//
-extern int16_t PositionPIDToSpeed_f(float deviation,PID pid);
 
-
-
-// extern int Change_x(int Now_x_ValueL, int Target_x);
-// extern int Change_y(int Now_y_ValueL, int Target_y);
+extern PID SpeedDate;//声明全局结构体参数
+extern int16_t PositionPID(float deviation, PID pid);//位置式PID控制器1
+extern int16_t PositionPID2(float deviation,PID pid);//位置式PID控制器2
 #endif

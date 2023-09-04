@@ -1,24 +1,23 @@
-#include "imu.h"
+#include "IMU.h"
 #include "mpu6050.h"
 #include "MahonyAHRS.h"
 #include "delay.h"
 #include "usart.h"
 static float Pitch_offset;
 static float Roll_offset;
-static float Yaw_offset;//陀螺仪偏移量
+static float Yaw_offset; // 陀螺仪偏移量
 
-#define PI 3.14159265358979f//圆周率
-#define OFFSET_COUNT 100//校准次数
-#define Buf_SIZE 10 // 队列长度，越大，平滑性越高
+//static IMU_Info imu;
+//IMU_Info imu;
+#define PI 3.14159265358979f // 圆周率
+#define OFFSET_COUNT 100     // 校准次数
+#define Buf_SIZE 10          // 队列长度，越大，平滑性越高
 
-int16_t MPU6050_FIFO[6][Buf_SIZE];//FIFO数组，用于存储原始数据
+int16_t MPU6050_FIFO[6][Buf_SIZE]; // FIFO数组，用于存储原始数据
 // int16_t lastAx, lastAy, lastAz, lastGx, lastGy, lastGz;
 static uint8_t Wr_Index = 0; // 当前FIFO的写入下标
-static IMU_Info imu;
 
-
-
-
+volatile float Pitch,Roll,Yaw; //框架四元数
 
 // 将val入队
 /**
@@ -31,7 +30,6 @@ void MPU6050_NewVal(int16_t *buf, int16_t val)
 {
     buf[Wr_Index] = val;
 }
-
 
 /**
  * @brief 计算FIFO中的平均值
@@ -60,13 +58,12 @@ static void Get_IMU_Data(float *values)
     int i;
 
     MPU6050_ReadGyro_Acc(&gyro[0], &acc[0]);
-    for(i = 0; i < 3; i++)
+    for (i = 0; i < 3; i++)
     {
         values[i] = ((float)gyro[i]) / 16.4f; // gyro range +-2000; adc accuracy 2^16=65536; 65536/4000=16.4;
         values[3 + i] = (float)acc[i];
     }
 }
-
 
 /**
  * @brief 对陀螺仪和加速度计进行校准
@@ -160,13 +157,13 @@ void MPU6050_ReadGyro_Acc(int16_t *gyro, int16_t *acc)
 
 uint8_t IMU_Init(void)
 {
-	uint8_t flag;
-	flag = MPU6050_Init();
+    uint8_t flag;
+    flag = MPU6050_Init();
     MPU6050_Init_Offset();
-	if (flag != 0)
-	{
-		return flag;
-	}
+    if (flag != 0)
+    {
+        return flag;
+    }
     MPU6050_Init_Offset();
     return flag;
 }
@@ -180,10 +177,10 @@ void IMU_GetValues(float *values)
     int16_t gyro[3], acc[3];
     int i;
     MPU6050_ReadGyro_Acc(&gyro[0], &acc[0]);
-    for(i = 0; i < 3; i++)
+    for (i = 0; i < 3; i++)
     {
         values[i] = ((float)gyro[i]) / 16.4f; // gyro range +-2000; adc accuracy 2^16=65536; 65536/4000=16.4;
-        values[3 + i] = (float)acc[i]/16384.0f;
+        values[3 + i] = (float)acc[i] / 16384.0f;
     }
 }
 
@@ -220,24 +217,22 @@ void IMU_Update(void)
     static float q[4];
     float Values[6];
     IMU_GetValues(Values);
-    MahonyAHRSupdateIMU(Values[0] * PI / 180, Values[1] * PI / 180, Values[2] * PI / 180,Values[3], Values[4], Values[5]);
+    MahonyAHRSupdateIMU(Values[0] * PI / 180, Values[1] * PI / 180, Values[2] * PI / 180, Values[3], Values[4], Values[5]);
     q[0] = q0;
     q[1] = q1;
     q[2] = q2;
     q[3] = q3;
 
-    imu.ax = Values[3];
-    imu.ay = Values[4];
-    imu.az = Values[5];
+//    imu.ax = Values[3];
+//    imu.ay = Values[4];
+//    imu.az = Values[5];
 
-    imu.Pitch_v = Values[0];
-    imu.Roll_v = Values[1];
-    imu.Yaw_v = Values[2];
-    //四元数计算欧拉角
-    imu.Roll = (atan2(2.0f * (q[0] * q[1] + q[2] * q[3]), 1 - 2.0f * (q[1] * q[1] + q[2] * q[2]))) * 180 / PI;
-    imu.Pitch = asin(2.0f * (q[0] * q[2] - q[1] * q[3])) * 180 / PI;
-    imu.Yaw = atan2(2 * q1 * q2 + 2 * q0 * q3, -2 * q2 * q2 - 2 * q3 * q3 + 1) * 180 / PI; // yaw
-    printf("%f %f %f\n", imu.Pitch,imu.Roll, imu.Yaw);
+//    imu.Pitch_v = Values[0];
+//    imu.Roll_v = Values[1];
+//    imu.Yaw_v = Values[2];
+    // 四元数计算欧拉角
+    Roll = (atan2(2.0f * (q[0] * q[1] + q[2] * q[3]), 1 - 2.0f * (q[1] * q[1] + q[2] * q[2]))) * 180 / PI;
+    Pitch = asin(2.0f * (q[0] * q[2] - q[1] * q[3])) * 180 / PI;
+    Yaw = atan2(2 * q1 * q2 + 2 * q0 * q3, -2 * q2 * q2 - 2 * q3 * q3 + 1) * 180 / PI; // yaw
 }
-
 

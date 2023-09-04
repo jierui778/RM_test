@@ -30,6 +30,7 @@
 ".\objects\timer.o"
 ".\objects\pid.o"
 ".\objects\can.o"
+".\objects\control.o"
 ".\objects\delay.o"
 ".\objects\sys.o"
 ".\objects\usart.o"

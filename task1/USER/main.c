@@ -6,15 +6,10 @@
 int16_t AX, AY, AZ, GX, GY, GZ;
 int main(void)
 {
-     delay_init();
-    uart_init(115200);
-    int t;
-
-    MPU6050_Init();
-
-
-
-
+    delay_init();//延时函数初始化
+    uart_init(115200);//串口初始化
+    int t;//温度
+    MPU6050_Init();//MPU6050初始化
     while (1)
     {
         t=MPU6050_GetTemperature();
