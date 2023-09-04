@@ -8,6 +8,18 @@
  */
 void Control_Init(void)
 {
+    CAN1_Init(CAN_SJW_1tq, CAN_BS2_8tq, CAN_BS1_9tq, 4, CAN_Mode_LoopBack);
+    IMU_Init();
+}
+
+/**
+ * @brief 控制代码运行
+ *
+ */
+void Control_Run(void)
+{
+
+
 
 }
 /**

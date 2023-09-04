@@ -1,12 +1,13 @@
 #include "pid.h"
 
-//速度PI参数
 PID SpeedDate=
 {
 	-40,		//赋值比例值
 	-5,			//赋值积分值
 	 0			//赋值微分值
 };
+//速度PI参数
+
 // //转向PD参数
 // PID TraceTurnPdate=
 // {
