@@ -14,13 +14,8 @@ int main(void)
     IMU_Init();
     float a[3], g[3];
 
-
-
-
     while (1)
     {
-
-        
 
         IMU_IntegralGyro(&g[0]);
         delay_ms(50);

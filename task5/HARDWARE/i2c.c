@@ -20,22 +20,20 @@ void MX_I2C2_Init(void)
   }
 }
 
-void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
+void HAL_I2C_MspInit(I2C_HandleTypeDef *i2cHandle)
 {
 
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if(i2cHandle->Instance==I2C2)
+  if (i2cHandle->Instance == I2C2)
   {
     __HAL_RCC_I2C2_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
 
-
-    GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_11;
+    GPIO_InitStruct.Pin = GPIO_PIN_10 | GPIO_PIN_11;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-//    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    //    GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
   }
 }
 

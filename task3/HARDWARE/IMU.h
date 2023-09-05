@@ -2,7 +2,7 @@
 #define __IMU_H
 #include "sys.h"
 
-//typedef struct
+// typedef struct
 //{
 //	float Pitch;
 //	float Roll;
@@ -17,8 +17,7 @@
 //	float az;
 //} IMU_Info;
 
-extern volatile float Pitch, Roll, Yaw; //框架四元数
-
+extern volatile float Pitch, Roll, Yaw; // 框架四元数
 
 uint8_t IMU_Init(void);
 void IMU_Update(void);

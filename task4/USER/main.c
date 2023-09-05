@@ -10,7 +10,6 @@
 int main(void)
 {
     delay_init();
-    // TIM3_Init(100-1, 8400-1); // 100HZ
     uart_init(115200);
     Control_Init();
         while (1)

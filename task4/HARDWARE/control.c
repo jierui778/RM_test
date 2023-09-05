@@ -10,6 +10,7 @@ void Control_Init(void)
 {
     CAN1_Init(CAN_SJW_1tq, CAN_BS2_8tq, CAN_BS1_9tq, 4, CAN_Mode_LoopBack);
     IMU_Init();
+    // TIM3_Init(100-1, 8400-1); // 100HZ for PID
 }
 
 /**
@@ -18,6 +19,7 @@ void Control_Init(void)
  */
 void Control_Run(void)
 {
+    
     
 
 

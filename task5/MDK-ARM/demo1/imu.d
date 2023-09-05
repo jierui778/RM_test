@@ -1,5 +1,5 @@
 demo1\imu.o: ..\HARDWARE\IMU.c
-demo1\imu.o: ..\HARDWARE\imu.h
+demo1\imu.o: ..\HARDWARE\IMU.h
 demo1\imu.o: ../Core/Inc/main.h
 demo1\imu.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 demo1\imu.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -30,5 +30,6 @@ demo1\imu.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 demo1\imu.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 demo1\imu.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 demo1\imu.o: ..\HARDWARE\mpu6050.h
+demo1\imu.o: ../Core/Inc/main.h
 demo1\imu.o: ..\HARDWARE\MahonyAHRS.h
 demo1\imu.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

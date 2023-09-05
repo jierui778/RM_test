@@ -39,3 +39,7 @@ demo1\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 demo1\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 demo1\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 demo1\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+demo1\freertos.o: ../HARDWARE/mpu6050.h
+demo1\freertos.o: ../Core/Inc/main.h
+demo1\freertos.o: ../HARDWARE/imu.h
+demo1\freertos.o: ../Core/Inc/main.h

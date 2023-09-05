@@ -30,3 +30,4 @@ demo1\control.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 demo1\control.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 demo1\control.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 demo1\control.o: ..\HARDWARE\pid.h
+demo1\control.o: ../Core/Inc/main.h

@@ -13,8 +13,8 @@ uint8_t MPU6050_Init()
     //    GPIO_InitTypeDef GPIO_InitStructure;
     //    I2C_InitTypeDef I2C_InitStructure;
 
-//    I2C_HandleTypeDef hi2c2;
-//    HAL_I2C_Init(&hi2c2);
+    //    I2C_HandleTypeDef hi2c2;
+    //    HAL_I2C_Init(&hi2c2);
     //    RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C2, ENABLE);
     //    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
 
@@ -196,7 +196,7 @@ uint8_t MPU6050_GetAccelerometer(short *ax, short *ay, short *az)
 uint8_t MPU6050_WriteLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
 {
 
-//    I2C_HandleTypeDef hi2c2;
+    //    I2C_HandleTypeDef hi2c2;
     HAL_I2C_Mem_Read(&hi2c2, addr, reg, I2C_MEMADD_SIZE_8BIT, buf, len, 0xfff);
     return 0;
 }
@@ -210,7 +210,7 @@ uint8_t MPU6050_WriteLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
  */
 uint8_t MPU6050_ReadLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
 {
-//    I2C_HandleTypeDef hi2c2;
+    //    I2C_HandleTypeDef hi2c2;
     HAL_I2C_Mem_Read(&hi2c2, addr, reg, I2C_MEMADD_SIZE_8BIT, buf, len, 0xfff);
     return 0;
 }
@@ -222,7 +222,7 @@ uint8_t MPU6050_ReadLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
  */
 uint8_t MPU6050_WriteByte(uint8_t reg, uint8_t data)
 {
-//    I2C_HandleTypeDef hi2c2;
+    //    I2C_HandleTypeDef hi2c2;
     HAL_I2C_Mem_Write(&hi2c2, MPU_ADDR, reg, I2C_MEMADD_SIZE_8BIT, &data, 1, 0xfff);
     return 0;
 }
@@ -237,7 +237,7 @@ uint8_t MPU6050_ReadByte(uint8_t reg)
 {
 
     uint8_t R_Data;
-//    I2C_HandleTypeDef hi2c2;
+    //    I2C_HandleTypeDef hi2c2;
     HAL_I2C_Mem_Read(&hi2c2, MPU_ADDR, reg, I2C_MEMADD_SIZE_8BIT, &R_Data, 1, 0xfff);
     return R_Data;
 }

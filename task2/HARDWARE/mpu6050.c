@@ -3,8 +3,6 @@
 #include "delay.h"
 #include "timer.h"
 
-
-
 uint8_t MPU6050_Init()
 {
     uint8_t res;
@@ -21,16 +19,15 @@ uint8_t MPU6050_Init()
     GPIO_Init(GPIOB, &GPIO_InitStructure);
 
     I2C_DeInit(I2C2);
-    I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;					//设置为IIC模式
-	I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;			//设置IIC的占空比，低电平除以高电平值为2
-	I2C_InitStructure.I2C_OwnAddress1 = 0x00;		//指定第一个设备的地址为7位地址
-	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;					//使能ACK信号
-	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;	//指定7位地址
-	I2C_InitStructure.I2C_ClockSpeed = 400000;
+    I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;                                // 设置为IIC模式
+    I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;                        // 设置IIC的占空比，低电平除以高电平值为2
+    I2C_InitStructure.I2C_OwnAddress1 = 0x00;                                 // 指定第一个设备的地址为7位地址
+    I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;                               // 使能ACK信号
+    I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit; // 指定7位地址
+    I2C_InitStructure.I2C_ClockSpeed = 400000;
 
     I2C_Cmd(I2C2, ENABLE); // 初始化IIC总线
     I2C_Init(I2C2, &I2C_InitStructure);
-
 
     MPU6050_WriteByte(MPU_PWR_MGMT1_REG, 0X80); // 复位MPU6050
     delay_ms(10);
@@ -264,7 +261,8 @@ uint8_t MPU6050_ReadLen(uint8_t addr, uint8_t reg, uint8_t len, uint8_t *buf)
  */
 uint8_t MPU6050_WriteByte(uint8_t addr, uint8_t data)
 {
-    while (I2C_GetFlagStatus(I2C2, I2C_FLAG_BUSY));
+    while (I2C_GetFlagStatus(I2C2, I2C_FLAG_BUSY))
+        ;
     I2C_GenerateSTART(I2C2, ENABLE); // 发送起始信号
     while (I2C_CheckEvent(I2C2, I2C_EVENT_MASTER_MODE_SELECT) != SUCCESS)
         ;                                                           // 等待EV5
@@ -339,7 +337,6 @@ uint8_t MPU6050_ReadByte(uint8_t addr)
 //     gyroY -= gyroY_offset;
 //     gyroZ -= gyroZ_offset;
 
-
 //     *pitch += GyroX * 0.01; // 每次10%权重累计偏转角度
 //     *roll += GyroY * 0.01;
 //     *yaw += GyroZ * 0.01;
@@ -360,4 +357,3 @@ uint8_t MPU6050_ReadByte(uint8_t addr)
 //         *yaw += 360;
 //     return 0;
 // }
-

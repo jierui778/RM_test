@@ -4,18 +4,6 @@
 #include "usart.h"
 #include "IMU.h"
 
-
-
-
-
-
-
-
-
-
-
-
-
 uint8_t MPU6050_Init()
 {
     uint8_t res;
@@ -69,7 +57,7 @@ uint8_t MPU6050_Init()
                   //	MPU6050_WriteByte(MPU_GYRO_CFG_REG,0x18);//陀螺仪自检及测量范围，典型值：0x18(不自检，2000deg/s
     // MPU6500_Init_Offset();
 
-    return 0;     // 地址设置正确,返回0
+    return 0; // 地址设置正确,返回0
 }
 
 /**
@@ -324,4 +312,3 @@ uint8_t MPU6050_ReadByte(uint8_t addr)
     return data;
     // 返回读取数据
 }
-

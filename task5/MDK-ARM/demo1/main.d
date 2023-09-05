@@ -38,5 +38,8 @@ demo1\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_defi
 demo1\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
 demo1\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 demo1\main.o: ../Core/Inc/i2c.h
+demo1\main.o: ../Core/Inc/main.h
 demo1\main.o: ../Core/Inc/gpio.h
+demo1\main.o: ../Core/Inc/main.h
 demo1\main.o: ../HARDWARE/mpu6050.h
+demo1\main.o: ../Core/Inc/main.h

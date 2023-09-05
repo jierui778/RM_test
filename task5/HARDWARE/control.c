@@ -6,7 +6,6 @@
  */
 void Control_Init(void)
 {
-
 }
 /**
  * @description: 根据PID参数调节左电机速度到目标速度
@@ -17,11 +16,11 @@ void Control_Init(void)
 
 int16_t ChangeSpeedMotorL(int NowAngleValueL, int TargetSpeedL)
 {
-    int pwm=0;
-    int bias=0;
+    int pwm = 0;
+    int bias = 0;
     int TargetAngleSpeedL;
     TargetAngleSpeedL = TargetSpeedL; // 目标速度后期在考虑是否转换
-    bias =NowAngleValueL-TargetAngleSpeedL;
+    bias = NowAngleValueL - TargetAngleSpeedL;
     pwm = PositionPID(bias, SpeedDate);
     if (pwm > PWM_MAX)
     {
@@ -34,7 +33,6 @@ int16_t ChangeSpeedMotorL(int NowAngleValueL, int TargetSpeedL)
     return pwm;
 }
 
-
 /**
  * @brief 根据PID参数调节右电机速度到目标速度
  *
@@ -44,13 +42,13 @@ int16_t ChangeSpeedMotorL(int NowAngleValueL, int TargetSpeedL)
  */
 int16_t ChangeSpeedMotorR(int NowAngleValueR, int TargetSpeedR)
 {
-    int pwm=0;
-    int bias=0;
+    int pwm = 0;
+    int bias = 0;
     int TargetAngleSpeedR;
     TargetAngleSpeedR = TargetSpeedR; // 目标速度后期在考虑是否转换
-    bias =NowAngleValueR-TargetAngleSpeedR;
+    bias = NowAngleValueR - TargetAngleSpeedR;
     pwm = PositionPID2(bias, SpeedDate); // 传入偏差和速度PID参数
-    if (pwm > PWM_MAX)//限制最大最小值
+    if (pwm > PWM_MAX)                   // 限制最大最小值
     {
         pwm = PWM_MAX;
     }
@@ -60,4 +58,3 @@ int16_t ChangeSpeedMotorR(int NowAngleValueR, int TargetSpeedR)
     }
     return pwm;
 }
-

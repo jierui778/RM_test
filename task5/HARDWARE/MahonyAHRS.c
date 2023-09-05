@@ -19,7 +19,6 @@ static float invSqrt(float x)
     return y;
 }
 
-
 /**
  * @brief 九轴数据的融合（包含磁力计）
  *
@@ -150,8 +149,8 @@ void MahonyAHRSupdate(float gx, float gy, float gz, float ax, float ay, float az
 void MahonyAHRSupdateIMU(float gx, float gy, float gz, float ax, float ay, float az)
 {
     float recipNorm;
-    float halfvx, halfvy, halfvz;//1/2 重力分量
-    float halfex, halfey, halfez;//1/2 重力误差
+    float halfvx, halfvy, halfvz; // 1/2 重力分量
+    float halfex, halfey, halfez; // 1/2 重力误差
     float qa, qb, qc;
 
     // Compute feedback only if accelerometer measurement valid (avoids NaN in accelerometer normalisation)

@@ -1,12 +1,12 @@
 #include "pid.h"
 
-PID SpeedDate=
-{
-	-40,		//赋值比例值
-	-5,			//赋值积分值
-	 0			//赋值微分值
+PID SpeedDate =
+	{
+		-40, // 赋值比例值
+		-5,	 // 赋值积分值
+		0	 // 赋值微分值
 };
-//速度PI参数
+// 速度PI参数
 
 // //转向PD参数
 // PID TraceTurnPdate=
@@ -20,15 +20,15 @@ PID SpeedDate=
  *        [in] deviation:偏差
  * @return:调节电机的PWM
  */
-int16_t PositionPID(float deviation,PID pid)
+int16_t PositionPID(float deviation, PID pid)
 {
-	float Position_KP=pid.kp,Position_KI=pid.ki,Position_KD=pid.kd;
+	float Position_KP = pid.kp, Position_KI = pid.ki, Position_KD = pid.kd;
 	int Pwm;
-	static float Bias,Integral_bias,Last_Bias;
-	Bias=deviation;
-	Integral_bias+=Bias;
-	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
-	Last_Bias=Bias;//上一次偏差保存
+	static float Bias, Integral_bias, Last_Bias;
+	Bias = deviation;
+	Integral_bias += Bias;
+	Pwm = Position_KP * Bias + Position_KI * Integral_bias + Position_KD * (Bias - Last_Bias);
+	Last_Bias = Bias; // 上一次偏差保存
 	return Pwm;
 }
 
@@ -36,15 +36,15 @@ int16_t PositionPID(float deviation,PID pid)
  *        [in] deviation:偏差
  * @return:调节电机的PWM
  */
-int16_t PositionPID2(float deviation,PID pid)
+int16_t PositionPID2(float deviation, PID pid)
 {
-	float Position_KP=pid.kp,Position_KI=pid.ki,Position_KD=pid.kd;
+	float Position_KP = pid.kp, Position_KI = pid.ki, Position_KD = pid.kd;
 	int Pwm;
-	static float Bias,Integral_bias,Last_Bias;
-	Bias=deviation;
-	Integral_bias+=Bias;
-	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
-	Last_Bias=Bias;
+	static float Bias, Integral_bias, Last_Bias;
+	Bias = deviation;
+	Integral_bias += Bias;
+	Pwm = Position_KP * Bias + Position_KI * Integral_bias + Position_KD * (Bias - Last_Bias);
+	Last_Bias = Bias;
 	return Pwm;
 }
 // /*@brief:速度PID使用位置式PID控制器

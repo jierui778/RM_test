@@ -7,8 +7,8 @@ static float Pitch_offset;
 static float Roll_offset;
 static float Yaw_offset; // 陀螺仪偏移量
 
-//static IMU_Info imu;
-//IMU_Info imu;
+// static IMU_Info imu;
+// IMU_Info imu;
 #define PI 3.14159265358979f // 圆周率
 #define OFFSET_COUNT 100     // 校准次数
 #define Buf_SIZE 10          // 队列长度，越大，平滑性越高
@@ -17,7 +17,7 @@ int16_t MPU6050_FIFO[6][Buf_SIZE]; // FIFO数组，用于存储原始数据
 // int16_t lastAx, lastAy, lastAz, lastGx, lastGy, lastGz;
 static uint8_t Wr_Index = 0; // 当前FIFO的写入下标
 
-volatile float Pitch,Roll,Yaw; //框架四元数
+volatile float Pitch, Roll, Yaw; // 框架四元数
 
 // 将val入队
 /**
@@ -223,16 +223,15 @@ void IMU_Update(void)
     q[2] = q2;
     q[3] = q3;
 
-//    imu.ax = Values[3];
-//    imu.ay = Values[4];
-//    imu.az = Values[5];
+    //    imu.ax = Values[3];
+    //    imu.ay = Values[4];
+    //    imu.az = Values[5];
 
-//    imu.Pitch_v = Values[0];
-//    imu.Roll_v = Values[1];
-//    imu.Yaw_v = Values[2];
+    //    imu.Pitch_v = Values[0];
+    //    imu.Roll_v = Values[1];
+    //    imu.Yaw_v = Values[2];
     // 四元数计算欧拉角
     Roll = (atan2(2.0f * (q[0] * q[1] + q[2] * q[3]), 1 - 2.0f * (q[1] * q[1] + q[2] * q[2]))) * 180 / PI;
     Pitch = asin(2.0f * (q[0] * q[2] - q[1] * q[3])) * 180 / PI;
     Yaw = atan2(2 * q1 * q2 + 2 * q0 * q3, -2 * q2 * q2 - 2 * q3 * q3 + 1) * 180 / PI; // yaw
 }
-

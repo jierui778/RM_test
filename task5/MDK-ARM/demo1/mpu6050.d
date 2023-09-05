@@ -29,4 +29,6 @@ demo1\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 demo1\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 demo1\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 demo1\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+demo1\mpu6050.o: ../Core/Inc/main.h
 demo1\mpu6050.o: ..\HARDWARE\i2c.h
+demo1\mpu6050.o: ../Core/Inc/main.h
